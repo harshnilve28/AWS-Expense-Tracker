@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <!-- Modern aesthetic serif font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap" rel="stylesheet"/>
+  <!-- Neutral sans for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <main class="main-content">
+      <header class="header">
+        <h1 class="app-title">Expense Tracker- by Harsh</h1>
+      </header>
+      <section class="panels">
+        <div class="panel upload-panel">
+          <h2>Upload Receipt</h2>
+          <input id="fileInput" type="file" accept=".jpg,.jpeg,.png,.pdf" />
+          <button id="uploadBtn">Upload</button>
+          <div id="loadingBarContainer" class="loading-bar-container hidden">
+            <div id="loadingBar" class="loading-bar"></div>
+          </div>
+          <p id="uploadMsg" class="upload-msg"></p>
+        </div>
+        <div class="panel chart-panel">
+          <h2>Spending Overview</h2>
+          <!-- Chart type toggle buttons -->
+          <div class="chart-controls">
+            <button id="radarBtn" class="chart-btn active" onclick="switchChart('radar')">Radar Chart</button>
+            <button id="pieBtn" class="chart-btn" onclick="switchChart('pie')">Pie Chart</button>
+          </div>
+          <canvas id="expenseChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
