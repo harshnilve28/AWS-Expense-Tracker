@@ -8,8 +8,8 @@ import uuid
 from datetime import datetime
 from decimal import Decimal
 
-BUCKET = "nilve-expense-tracker-receipts"
-TABLE = "nilve-expense-tracker-expenses"
+BUCKET = "Your-bucket-name"
+TABLE = "DynomoDB-table-name"
 REGION = "us-east-1"
 
 s3 = boto3.client('s3')
