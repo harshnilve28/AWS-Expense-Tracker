@@ -2,18 +2,16 @@
 
 An intelligent expense tracking application that automatically processes receipt images using AWS services and displays spending analytics through interactive charts.
 
-## 📸 Screenshots
+📸 Screenshots
+🌐 Web Application Interface
+![Data visualization, and user-friendly interface](img/webpage.png)
+![Pie Chart](img/piechart.png)
 
-### Dashboard Overview
+⚡ AWS Lambda Functions Backend
+![AWS Lambda Functions](img/aws_lambda.png)
 
-
-
-### Receipt Upload Interface
-
-![Upload Interface](./screenshotsizations
-
-
-![Pie Chart](./screenshotsiew
+☁️ Cloud S3 Bucket Storage
+![S3 Bucket Storage](img/s3_bucket_objs.png)
 
 ```mermaid
 graph TD
