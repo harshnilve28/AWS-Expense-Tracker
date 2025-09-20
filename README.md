@@ -30,11 +30,11 @@ graph TD
     J --> M[Chart.js Visualization]
     M --> B
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style F fill:#fff3e0
-    style I fill:#e8f5e8
-    style J fill:#fce4ec
+    style A fill:#e1f5fe, color:#111
+    style B fill:#f3e5f5, color:#111
+    style F fill:#fff3e0, color:#111
+    style I fill:#e8f5e8, color:#111
+    style J fill:#fce4ec, color:#111
 ```
 
 ## 🛠️ Tech Stack
