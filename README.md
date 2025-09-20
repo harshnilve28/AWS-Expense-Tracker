@@ -3,6 +3,7 @@
 An intelligent expense tracking application that automatically processes receipt images using AWS services and displays spending analytics through interactive charts.
 
 📸 Screenshots
+
 🌐 Web Application Interface
 ![Data visualization, and user-friendly interface](img/webpage.png)
 ![Pie Chart](img/piechart.png)
