@@ -1,4 +1,4 @@
-# 🧾 AWS- Expense Tracker
+# AWS- Expense Tracker
 
 An intelligent expense tracking application that automatically processes receipt images using AWS services and displays spending analytics through interactive charts.
 
@@ -62,34 +62,34 @@ graph TD
 ```
 expense-tracker/
 ├── FrontEnd
-│   ├── 📄 index.html              # Main web interface
-│   ├── 🎨 styles.css
-│   └──⚡ app.js                  # Frontend JavaScript logic
+│   ├── index.html              # Main web interface
+│   ├── styles.css
+│   └── app.js                  # Frontend JavaScript logic
 ├── 📁 lambda-functions/
-│   ├── 🔧 Pre-signed_url.py            # S3 upload URLs
-│   ├── 🔄 process_receipt_upload.py    # Receipt processing
-│   └── 📊 get_summary.py               # Data aggregation
+│   ├── Pre-signed_url.py            # S3 upload URLs
+│   ├── process_receipt_upload.py    # Receipt processing
+│   └── get_summary.py               # Data aggregation
 ├── img
 └── 📄 README.md
 ```
 
 ## 🚀 Features
 
-### ✨ Core Functionality
-- **📤 Receipt Upload** - Drag & drop or browse file upload
-- **🤖 AI Text Extraction** - Automatic OCR using AWS Textract
-- **🏷️ Smart Categorization** - Auto-categorizes expenses (Food, Clothes, Travel, Medical)
-- **💰 Amount Detection** - Extracts total amounts from receipts
-- **📊 Interactive Charts** - Toggle between Radar and Pie chart views
-- **💾 Real-time Storage** - Instant data persistence in DynamoDB
+### Core Functionality
+- **Receipt Upload** - Drag & drop or browse file upload
+- **AI Text Extraction** - Automatic OCR using AWS Textract
+- **Smart Categorization** - Auto-categorizes expenses (Food, Clothes, Travel, Medical)
+- **Amount Detection** - Extracts total amounts from receipts
+- **Interactive Charts** - Toggle between Radar and Pie chart views
+- **Real-time Storage** - Instant data persistence in DynamoDB
 
 ### 🎯 Advanced Features
-- **📈 Data Labels** - View exact amounts directly on charts
-- **📱 Responsive Design** - Works on desktop and mobile
-- **⚡ Scalable Architecture** - Scalable and cost-effective
-- **🔐 Secure Upload** - Pre-signed URLs for direct S3 uploads
+- **Data Labels** - View exact amounts directly on charts
+- **Responsive Design** - Works on desktop and mobile
+- **Scalable Architecture** - Scalable and cost-effective
+- **Secure Upload** - Pre-signed URLs for direct S3 uploads
 
-## 🏃♂️ Quick Start
+## Quick Start
 
 ### Prerequisites
 - AWS Account with appropriate permissions
@@ -121,7 +121,7 @@ const SUMMARY_URL = "https://your-api-gateway-url/summary";
 - Ensure proper file permissions
 - Test the application
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### POST `/presign`
 Generates pre-signed S3 upload URLs
@@ -143,7 +143,7 @@ Returns expense totals by category
 }
 ```
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### DynamoDB Table: `nilve-expense-tracker-expenses`
 ```json
@@ -157,7 +157,7 @@ Returns expense totals by category
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Sample Receipts
 Test the system with various receipt formats:
@@ -173,23 +173,23 @@ Test the system with various receipt formats:
 
 ## 🔐 Security Features
 
-- **🔒 Pre-signed URLs** - Secure direct S3 uploads
-- **🛡️ IAM Roles** - Least privilege access
-- **🔐 API Gateway** - Rate limiting and authentication ready
-- **🚫 Input Validation** - File type and size restrictions
+- **Pre-signed URLs** - Secure direct S3 uploads
+- **IAM Roles** - Least privilege access
+- **API Gateway** - Rate limiting and authentication ready
+- **Input Validation** - File type and size restrictions
 
 ## 📊 Performance Metrics
 
-- **⚡ Upload Speed:** < 3 seconds for typical receipts
-- **🤖 Processing Time:** 1-2 seconds for text extraction
-- **📈 Chart Rendering:** < 500ms for data visualization
-- **💾 Storage Cost:** ~$0.02 per month for 100 receipts
+- **Upload Speed:** < 3 seconds for typical receipts
+- **Processing Time:** 1-2 seconds for text extraction
+- **Chart Rendering:** < 500ms for data visualization
+- **Storage Cost:** ~$0.02 per month for 100 receipts
 
-## 👨💻 Author
+## Author
 
 **Harsh** - [Harsh Nilve]([https://github.com/yourusername](https://github.com/harshnilve28))
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - AWS for comprehensive cloud services
 - Chart.js for beautiful data visualizations

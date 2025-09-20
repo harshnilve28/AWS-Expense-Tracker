@@ -5,7 +5,7 @@ import boto3
 from decimal import Decimal
 
 TABLE = "table-name"
-REGION = "us-east-1" 
+REGION = "us-east-1" #your region here 
 
 def decimal_default(obj):
     """JSON serializer for DynamoDB Decimal objects"""

@@ -16,13 +16,13 @@ def lambda_handler(event, context):
 
     s3 = boto3.client("s3")
 
-    # Set up POST fields/policy (you can restrict size/type if you want)
+    # Set up POST fields/policy
     presigned = s3.generate_presigned_post(
         Bucket=BUCKET,
         Key=key,
         Fields=None,
         Conditions=[
-            ["starts-with", "$key", "uploads/"],  # only allow upload to 'uploads/' prefix
+            ["starts-with", "$key", "uploads/"],
             ["content-length-range", 0, 10485760]  # Max 10MB
         ],
         ExpiresIn=300  # URL valid for 5min
